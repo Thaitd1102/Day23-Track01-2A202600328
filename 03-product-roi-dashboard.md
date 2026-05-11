@@ -8,6 +8,9 @@
 * **2 Workflow chính:**
     1.  **Hỏi đáp tự động có dẫn chứng:** AI nhận diện ý định -> Truy xuất Ground Truth từ database -> Trả lời kèm URL dẫn chứng từ website nhà trường.
     2.  **Xử lý ca khó (Escalation):** AI phát hiện không có dữ liệu hoặc câu hỏi nhạy cảm -> Chuyển luồng cho Cán bộ tư vấn kèm tóm tắt bối cảnh.
+
+![Workflow RAG](./assets/workflow-rag.png)
+
 * **Con người kiểm tra ở đâu:** Duyệt các câu trả lời cho ca phức tạp (điểm chuẩn, học bổng); Audit ngẫu nhiên 5% log chat hằng tuần để kiểm tra độ khớp của trích dẫn.
 * **Xử lý khi AI sai:** Ngắt kết nối chat, tự động gửi lời xin lỗi và thông báo "Cố vấn sẽ liên hệ lại sau 5 phút"; ghi log lỗi vào hệ thống giám sát.
 * **Rào cản ADKAR:** **Trust (Niềm tin)** - Cán bộ lo ngại AI tự bịa số liệu.
@@ -31,10 +34,7 @@
 
 ## Part C: Dashboard Mock (Mô phỏng)
 
-- **[Product Coverage]:** 70% hội thoại được AI xử lý kèm dẫn chứng.
-- **[Quality Goal]:** Override Rate hiện tại 7% (Màu Xanh 🟢).
-- **[Trust Indicator]:** Citation Accuracy 99% (Màu Xanh 🟢).
-- **[Value]:** Tiết kiệm ~20 triệu VNĐ tiền nhân công/tháng.
+![Dashboard Mock](./assets/dashboard-mock.png)
 
 ---
 
